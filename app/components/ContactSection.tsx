@@ -206,23 +206,18 @@ export default function ContactSection() {
                 <div className="flex flex-col gap-4">
                   {[
                     {
-                      label: "Shop our products",
+                      label: "Shop & explore",
                       url: "https://mye.farm",
-                      desc: "Browse and buy farm-fresh products",
+                      desc: "Browse products and explore the full mye.farm experience",
                     },
                     {
                       label: "Company profile",
                       url: "https://profile.mye.farm",
                       desc: "Learn about our mission and impact",
                     },
-                    {
-                      label: "Main website",
-                      url: "https://mye.farm",
-                      desc: "Explore the full mye.farm experience",
-                    },
                   ].map((link) => (
                     <a
-                      key={link.url}
+                      key={link.label}
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
