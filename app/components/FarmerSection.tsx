@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 export default function FarmerSection() {
@@ -13,52 +14,49 @@ export default function FarmerSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Visual */}
           <FadeUp>
-            <div
-              className="rounded-3xl overflow-hidden relative aspect-[4/3]"
-              style={{
-                background:
-                  "linear-gradient(135deg, var(--color-forest), var(--color-leaf))",
-              }}
-            >
-              {/* Decorative */}
-              <div
-                className="absolute -top-10 -right-10 w-48 h-48 rounded-full opacity-20"
-                style={{ background: "var(--color-lime)" }}
-              />
-              <div
-                className="absolute -bottom-10 -left-10 w-36 h-36 rounded-full opacity-20"
-                style={{ background: "var(--color-harvest)" }}
-              />
-
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-10">
-                <div className="text-7xl">👨‍🌾</div>
-                <div className="text-center">
-                  <p
-                    className="text-2xl font-bold text-white"
-                    style={{
-                      fontFamily: "var(--font-playfair), Georgia, serif",
-                    }}
-                  >
-                    Pramod Jena
-                  </p>
-                  <p
-                    className="text-sm mt-1"
-                    style={{ color: "rgba(255,255,255,0.7)" }}
-                  >
-                    Partner Farmer · Odisha
-                  </p>
-                </div>
-
-                {/* Tag */}
+            <div className="flex flex-col gap-4">
+              {/* Main image */}
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                <Image
+                  src="/images/founder-team-field-visit.jpeg"
+                  alt="mye.farm co-founders on a field visit with partner farmers in Odisha"
+                  fill
+                  className="object-cover"
+                />
                 <div
-                  className="px-4 py-2 rounded-full text-xs font-semibold"
+                  className="absolute inset-0"
                   style={{
-                    background: "rgba(255,255,255,0.15)",
-                    color: "white",
-                    border: "1px solid rgba(255,255,255,0.2)",
+                    background:
+                      "linear-gradient(to top, rgba(10,25,16,0.65) 0%, transparent 55%)",
                   }}
-                >
-                  Traditional Wisdom · Sustainable Practices
+                />
+                <div className="absolute bottom-5 left-5">
+                  <span
+                    className="px-3 py-1.5 rounded-full text-xs font-semibold text-white"
+                    style={{ background: "rgba(45,122,79,0.85)", backdropFilter: "blur(4px)" }}
+                  >
+                    Field Visit · Odisha
+                  </span>
+                </div>
+              </div>
+
+              {/* Two smaller images */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative rounded-2xl overflow-hidden aspect-square">
+                  <Image
+                    src="/images/hands-holding-paddy.jpeg"
+                    alt="Hands holding freshly harvested paddy — the foundation of mye.farm"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden aspect-square">
+                  <Image
+                    src="/images/founder-team-group.jpeg"
+                    alt="mye.farm founding team"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>

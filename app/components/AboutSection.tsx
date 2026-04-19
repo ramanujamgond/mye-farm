@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 const pillars = [
@@ -95,7 +96,7 @@ export default function AboutSection() {
         {/* Body — two columns */}
         <FadeUp delay={0.2}>
           <div
-            className="grid md:grid-cols-2 gap-8 mx-auto mt-10 mb-20"
+            className="grid md:grid-cols-2 gap-8 mx-auto mt-10 mb-16"
             style={{ maxWidth: "800px" }}
           >
             <p style={{ color: "var(--color-bark)", lineHeight: 1.8 }}>
@@ -109,6 +110,30 @@ export default function AboutSection() {
               scalable models in farm-to-market linkages and nurturing
               agri-entrepreneurship.
             </p>
+          </div>
+        </FadeUp>
+
+        {/* Image strip */}
+        <FadeUp delay={0.25}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            {[
+              { src: "/images/hands-holding-paddy.jpeg", alt: "Hands holding freshly harvested paddy grains from Odisha" },
+              { src: "/images/founder-team-field-visit.jpeg", alt: "mye.farm founders on a field visit with farmers" },
+              { src: "/images/founder-team-group.jpeg", alt: "mye.farm founding team together" },
+              { src: "/images/myefarm-products-flatlay.jpeg", alt: "mye.farm product range — rice, ghee, honey and millets" },
+            ].map((img) => (
+              <div
+                key={img.src}
+                className="relative aspect-square rounded-2xl overflow-hidden"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            ))}
           </div>
         </FadeUp>
 

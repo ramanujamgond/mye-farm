@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 const commitments = [
@@ -141,6 +142,33 @@ export default function SustainabilitySection() {
             </FadeUp>
           ))}
         </div>
+
+        {/* Full-width image strip */}
+        <FadeUp delay={0.4}>
+          <div className="relative mt-12 rounded-3xl overflow-hidden aspect-[21/7]">
+            <Image
+              src="/images/founder-swosti-paddy-field.jpeg"
+              alt="Swosti Mishra standing in a paddy field — mye.farm's commitment to sustainable agriculture"
+              fill
+              className="object-cover object-center"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(10,25,16,0.8) 0%, rgba(10,25,16,0.3) 60%, transparent 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-center px-10">
+              <p
+                className="text-xl md:text-2xl font-bold text-white max-w-md"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif", lineHeight: 1.4 }}
+              >
+                &ldquo;Every grain tells a story of care, hard work, and tradition.&rdquo;
+              </p>
+            </div>
+          </div>
+        </FadeUp>
       </div>
     </section>
   );

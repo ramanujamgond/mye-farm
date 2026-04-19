@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 const products = [
@@ -101,6 +102,41 @@ export default function ProductsSection() {
             </a>
           </FadeUp>
         </div>
+
+        {/* Product flatlay banner */}
+        <FadeUp delay={0.15}>
+          <div className="relative rounded-3xl overflow-hidden mb-14 aspect-[21/7]">
+            <Image
+              src="/images/myefarm-products-flatlay.jpeg"
+              alt="mye.farm product range — premium desi cow ghee, rice, moong dal and more"
+              fill
+              className="object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(10,25,16,0.75) 0%, rgba(10,25,16,0.2) 60%, transparent 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-center px-10">
+              <div>
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-2"
+                  style={{ color: "var(--color-lime)" }}
+                >
+                  Farm Fresh
+                </p>
+                <h3
+                  className="text-2xl md:text-3xl font-bold text-white"
+                  style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  Pure. Natural. Traceable.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </FadeUp>
 
         {/* Product grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

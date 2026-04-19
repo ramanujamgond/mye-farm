@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { ArrowRight, Play, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const scrollToAbout = () => {
@@ -185,34 +186,22 @@ export default function HeroSection() {
                 backdropFilter: "blur(8px)",
               }}
             >
-              {/* Decorative farm illustration */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative"
-                style={{ background: "var(--surface-mid)" }}>
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
-                  <div
-                    className="text-8xl opacity-30"
-                    style={{ filter: "grayscale(0.3)" }}
-                  >
-                    🌾
-                  </div>
-                  <div className="text-center">
-                    <p
-                      className="text-lg font-semibold"
-                      style={{
-                        color: "var(--color-lime)",
-                        fontFamily: "var(--font-playfair), Georgia, serif",
-                      }}
-                    >
-                      Farm to Table
-                    </p>
-                    <p
-                      className="text-sm mt-1"
-                      style={{ color: "rgba(255,255,255,0.5)" }}
-                    >
-                      Odisha, India
-                    </p>
-                  </div>
-                </div>
+              {/* Hero image */}
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                <Image
+                  src="/images/founder-swosti-paddy-field.jpeg"
+                  alt="Swosti Mishra, co-founder of mye.farm, in a paddy field in Odisha"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(to top, rgba(10,25,16,0.6) 0%, transparent 60%)",
+                  }}
+                />
               </div>
 
               {/* Floating badge */}
@@ -233,12 +222,10 @@ export default function HeroSection() {
                     className="text-sm font-medium"
                     style={{ color: "rgba(255,255,255,0.6)" }}
                   >
-                    Latest Product
+                    Co-founder
                   </p>
-                  <p
-                    className="text-base font-semibold text-white mt-0.5"
-                  >
-                    Premium Desi Cow Ghee
+                  <p className="text-base font-semibold text-white mt-0.5">
+                    Swosti Mishra · Odisha
                   </p>
                 </div>
                 <a
@@ -247,7 +234,7 @@ export default function HeroSection() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full flex items-center justify-center transition-transform hover:scale-110"
                   style={{ background: "var(--color-leaf)" }}
-                  aria-label="Shop ghee"
+                  aria-label="Visit mye.farm"
                 >
                   <ArrowRight size={16} className="text-white" />
                 </a>
