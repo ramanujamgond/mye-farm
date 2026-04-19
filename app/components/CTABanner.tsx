@@ -55,7 +55,7 @@ export default function CTABanner() {
         <FadeUp delay={0.2}>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://shop.mye.farm"
+              href="https://mye.farm"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"

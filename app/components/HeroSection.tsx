@@ -103,7 +103,7 @@ export default function HeroSection() {
               className="flex flex-wrap gap-4"
             >
               <a
-                href="https://shop.mye.farm"
+                href="https://mye.farm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
@@ -242,7 +242,7 @@ export default function HeroSection() {
                   </p>
                 </div>
                 <a
-                  href="https://shop.mye.farm"
+                  href="https://mye.farm"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full flex items-center justify-center transition-transform hover:scale-110"

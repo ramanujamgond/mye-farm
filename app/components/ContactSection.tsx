@@ -207,7 +207,7 @@ export default function ContactSection() {
                   {[
                     {
                       label: "Shop our products",
-                      url: "https://shop.mye.farm",
+                      url: "https://mye.farm",
                       desc: "Browse and buy farm-fresh products",
                     },
                     {

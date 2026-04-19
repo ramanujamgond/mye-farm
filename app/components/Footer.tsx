@@ -6,16 +6,16 @@ const footerLinks = {
     { label: "Impact", href: "#impact" },
   ],
   Products: [
-    { label: "Desi Cow Ghee", href: "https://shop.mye.farm" },
-    { label: "Whole Moong", href: "https://shop.mye.farm" },
-    { label: "Roasted Moong Dal", href: "https://shop.mye.farm" },
-    { label: "Kheer Rice", href: "https://shop.mye.farm" },
+    { label: "Desi Cow Ghee", href: "https://mye.farm" },
+    { label: "Whole Moong", href: "https://mye.farm" },
+    { label: "Roasted Moong Dal", href: "https://mye.farm" },
+    { label: "Kheer Rice", href: "https://mye.farm" },
   ],
   Connect: [
     { label: "swosti@mye.farm", href: "mailto:swosti@mye.farm" },
     { label: "getmyefarm@gmail.com", href: "mailto:getmyefarm@gmail.com" },
     { label: "+91 99 3723 2555", href: "tel:+919937232555" },
-    { label: "shop.mye.farm", href: "https://shop.mye.farm" },
+    { label: "mye.farm", href: "https://mye.farm" },
   ],
 };
 

@@ -90,7 +90,7 @@ export default function ProductsSection() {
 
           <FadeUp delay={0.2}>
             <a
-              href="https://shop.mye.farm"
+              href="https://mye.farm"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:gap-3"
@@ -161,7 +161,7 @@ export default function ProductsSection() {
                 {/* CTA */}
                 <div className="mt-6 flex items-center gap-2">
                   <a
-                    href="https://shop.mye.farm"
+                    href="https://mye.farm"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-semibold flex items-center gap-1.5 transition-all duration-200 hover:gap-2.5"

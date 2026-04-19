@@ -111,7 +111,7 @@ export default function Navbar() {
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <motion.a
-              href="https://shop.mye.farm"
+              href="https://mye.farm"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0 }}
@@ -195,7 +195,7 @@ export default function Navbar() {
               ))}
 
               <motion.a
-                href="https://shop.mye.farm"
+                href="https://mye.farm"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
