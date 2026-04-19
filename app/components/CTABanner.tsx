@@ -55,7 +55,7 @@ export default function CTABanner() {
         <FadeUp delay={0.2}>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="mailto:swosti@mye.farm"
+              href="mailto:mishra.swosti@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
               style={{
                 background: "var(--color-soil)",
@@ -63,7 +63,7 @@ export default function CTABanner() {
               }}
             >
               <Mail size={15} />
-              swosti@mye.farm
+              mishra.swosti@gmail.com
             </a>
 
             <a

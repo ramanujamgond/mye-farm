@@ -1,6 +1,24 @@
 "use client";
 
-import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
+
+function LinkedInIcon({ size = 18, style }: { size?: number; style?: React.CSSProperties }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      style={style}
+      aria-hidden="true"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect x="2" y="9" width="4" height="12" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
 import FadeUp from "./FadeUp";
 
 export default function ContactSection() {
@@ -17,10 +35,7 @@ export default function ContactSection() {
           <div>
             <FadeUp>
               <div className="flex items-center gap-3 mb-4">
-                <span
-                  className="h-px w-12"
-                  style={{ background: "var(--color-leaf)" }}
-                />
+                <span className="h-px w-12" style={{ background: "var(--color-leaf)" }} />
                 <span
                   className="text-xs font-semibold uppercase tracking-widest"
                   style={{ color: "var(--color-leaf)" }}
@@ -51,26 +66,53 @@ export default function ContactSection() {
                 className="mb-10 leading-relaxed"
                 style={{ color: "var(--color-bark)", maxWidth: "440px" }}
               >
-                Whether you&apos;re a farmer looking to partner, a consumer
-                with questions, or an organisation interested in collaboration —
-                we&apos;d love to hear from you.
+                Whether you&apos;re a farmer looking to partner, an investor,
+                a policy maker, or an organisation aligned with sustainable
+                agritech — reach out directly to Swosti.
               </p>
             </FadeUp>
 
             <FadeUp delay={0.3}>
               <div className="flex flex-col gap-5">
+                {/* LinkedIn */}
                 <a
-                  href="mailto:swosti@mye.farm"
+                  href="https://linkedin.com/in/swostimishra"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-4 group"
                 >
                   <div
-                    className="w-11 h-11 rounded-full flex items-center justify-center shrink-0 transition-colors"
+                    className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
                     style={{ background: "var(--color-fog)" }}
                   >
-                    <Mail
-                      size={18}
-                      style={{ color: "var(--color-leaf)" }}
-                    />
+                    <LinkedInIcon size={18} style={{ color: "var(--color-leaf)" }} />
+                  </div>
+                  <div>
+                    <p
+                      className="text-xs font-medium uppercase tracking-wider mb-0.5"
+                      style={{ color: "var(--color-bark)" }}
+                    >
+                      LinkedIn
+                    </p>
+                    <p
+                      className="text-sm font-medium group-hover:underline"
+                      style={{ color: "var(--color-soil)" }}
+                    >
+                      linkedin.com/in/swostimishra
+                    </p>
+                  </div>
+                </a>
+
+                {/* Email — personal */}
+                <a
+                  href="mailto:mishra.swosti@gmail.com"
+                  className="flex items-center gap-4 group"
+                >
+                  <div
+                    className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
+                    style={{ background: "var(--color-fog)" }}
+                  >
+                    <Mail size={18} style={{ color: "var(--color-leaf)" }} />
                   </div>
                   <div>
                     <p
@@ -83,40 +125,39 @@ export default function ContactSection() {
                       className="text-sm font-medium group-hover:underline"
                       style={{ color: "var(--color-soil)" }}
                     >
-                      swosti@mye.farm
+                      mishra.swosti@gmail.com
                     </p>
                   </div>
                 </a>
 
+                {/* Email — org */}
                 <a
-                  href="mailto:getmyefarm@gmail.com"
+                  href="mailto:swosti@mye.farm"
                   className="flex items-center gap-4 group"
                 >
                   <div
                     className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
                     style={{ background: "var(--color-fog)" }}
                   >
-                    <Mail
-                      size={18}
-                      style={{ color: "var(--color-leaf)" }}
-                    />
+                    <Mail size={18} style={{ color: "var(--color-leaf)" }} />
                   </div>
                   <div>
                     <p
                       className="text-xs font-medium uppercase tracking-wider mb-0.5"
                       style={{ color: "var(--color-bark)" }}
                     >
-                      General
+                      Work Email
                     </p>
                     <p
                       className="text-sm font-medium group-hover:underline"
                       style={{ color: "var(--color-soil)" }}
                     >
-                      getmyefarm@gmail.com
+                      swosti@mye.farm
                     </p>
                   </div>
                 </a>
 
+                {/* Phone */}
                 <a
                   href="tel:+919937232555"
                   className="flex items-center gap-4 group"
@@ -125,10 +166,7 @@ export default function ContactSection() {
                     className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
                     style={{ background: "var(--color-fog)" }}
                   >
-                    <Phone
-                      size={18}
-                      style={{ color: "var(--color-leaf)" }}
-                    />
+                    <Phone size={18} style={{ color: "var(--color-leaf)" }} />
                   </div>
                   <div>
                     <p
@@ -146,15 +184,13 @@ export default function ContactSection() {
                   </div>
                 </a>
 
+                {/* Address */}
                 <div className="flex items-start gap-4">
                   <div
                     className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
                     style={{ background: "var(--color-fog)" }}
                   >
-                    <MapPin
-                      size={18}
-                      style={{ color: "var(--color-leaf)" }}
-                    />
+                    <MapPin size={18} style={{ color: "var(--color-leaf)" }} />
                   </div>
                   <div>
                     <p
@@ -179,7 +215,7 @@ export default function ContactSection() {
             </FadeUp>
           </div>
 
-          {/* Right — Quick links */}
+          {/* Right — founder card */}
           <FadeUp delay={0.2}>
             <div
               className="rounded-3xl p-10 h-full flex flex-col justify-between"
@@ -190,71 +226,63 @@ export default function ContactSection() {
               }}
             >
               <div>
-                <h3
-                  className="text-xl font-semibold mb-2"
-                  style={{ color: "var(--color-soil)" }}
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6"
+                  style={{ background: "var(--color-leaf)" }}
                 >
-                  Explore mye.farm
+                  S
+                </div>
+                <h3
+                  className="text-2xl font-bold mb-1"
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    color: "var(--color-soil)",
+                  }}
+                >
+                  Swosti Mishra
                 </h3>
                 <p
-                  className="text-sm mb-8"
+                  className="text-sm font-medium mb-6"
+                  style={{ color: "var(--color-leaf)" }}
+                >
+                  Founder, Myefarm
+                </p>
+                <p
+                  className="text-sm leading-relaxed mb-8"
                   style={{ color: "var(--color-bark)" }}
                 >
-                  Visit our platforms to shop, learn more, or connect.
+                  Building a transparent, technology-enabled agricultural
+                  ecosystem where producers and consumers are directly
+                  connected — ensuring fairness, sustainability, and long-term
+                  value for all stakeholders.
                 </p>
 
-                <div className="flex flex-col gap-4">
-                  {[
-                    {
-                      label: "Shop & explore",
-                      url: "https://mye.farm",
-                      desc: "Browse products and explore the full mye.farm experience",
-                    },
-                    {
-                      label: "Company profile",
-                      url: "https://profile.mye.farm",
-                      desc: "Learn about our mission and impact",
-                    },
-                  ].map((link) => (
-                    <a
-                      key={link.label}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between p-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 group"
-                      style={{
-                        background: "var(--color-mist)",
-                        border: "1px solid var(--color-fog)",
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLElement).style.borderColor =
-                          "var(--color-sprout)";
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLElement).style.borderColor =
-                          "var(--color-fog)";
-                      }}                    >
-                      <div>
-                        <p
-                          className="text-sm font-semibold"
-                          style={{ color: "var(--color-soil)" }}
-                        >
-                          {link.label}
-                        </p>
-                        <p
-                          className="text-xs mt-0.5"
-                          style={{ color: "var(--color-bark)" }}
-                        >
-                          {link.desc}
-                        </p>
-                      </div>
-                      <ExternalLink
-                        size={16}
-                        style={{ color: "var(--color-leaf)" }}
-                        className="shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      />
-                    </a>
-                  ))}
+                <div className="flex flex-col gap-3">
+                  <a
+                    href="https://linkedin.com/in/swostimishra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                    style={{
+                      background: "#0A66C2",
+                      color: "white",
+                    }}
+                  >
+                    <LinkedInIcon size={16} />
+                    Connect on LinkedIn
+                  </a>
+                  <a
+                    href="mailto:mishra.swosti@gmail.com"
+                    className="inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                    style={{
+                      background: "var(--color-mist)",
+                      color: "var(--color-soil)",
+                      border: "1px solid var(--color-fog)",
+                    }}
+                  >
+                    <Mail size={16} style={{ color: "var(--color-leaf)" }} />
+                    Send an Email
+                  </a>
                 </div>
               </div>
 
@@ -262,11 +290,8 @@ export default function ContactSection() {
                 className="mt-8 pt-8"
                 style={{ borderTop: "1px solid var(--color-fog)" }}
               >
-                <p
-                  className="text-xs"
-                  style={{ color: "var(--color-bark)" }}
-                >
-                  🌱 Grow your own · Eat clean · Support farmers
+                <p className="text-xs" style={{ color: "var(--color-bark)" }}>
+                  🌱 Centre of Excellence in Agritech · Bhubaneswar, Odisha
                 </p>
               </div>
             </div>

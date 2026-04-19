@@ -93,7 +93,7 @@ export default function Navbar() {
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <motion.a
-              href="mailto:swosti@mye.farm"
+              href="mailto:mishra.swosti@gmail.com"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.4 }}
@@ -153,7 +153,7 @@ export default function Navbar() {
               ))}
 
               <motion.a
-                href="mailto:swosti@mye.farm"
+                href="mailto:mishra.swosti@gmail.com"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.07, duration: 0.4 }}
