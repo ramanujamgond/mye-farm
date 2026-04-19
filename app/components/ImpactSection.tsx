@@ -13,28 +13,28 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
+    value: 3500,
+    suffix: "+",
+    label: "Farmers Impacted",
+    sublabel: "Farmers supported across partner FPOs and SHGs",
+  },
+  {
     value: 15,
-    suffix: "",
+    suffix: "+",
     label: "FPOs Supported",
     sublabel: "Farmer Producer Organizations strengthened",
   },
   {
-    value: 30,
-    suffix: "",
-    label: "Trainings Conducted",
-    sublabel: "Comprehensive skill development programs",
-  },
-  {
-    value: 450,
+    value: 100,
     suffix: "+",
-    label: "SHG Women Reached",
-    sublabel: "Self-Help Group women empowered",
+    label: "SHGs Empowered",
+    sublabel: "Self-Help Groups empowered with digital tools",
   },
   {
-    value: 85,
-    suffix: "%",
-    label: "Income Growth",
-    sublabel: "Average increase in farmer income post-training",
+    value: 13,
+    suffix: "+",
+    label: "Product Lines",
+    sublabel: "Distinct product lines launched on e-commerce channels",
   },
 ];
 
@@ -187,8 +187,8 @@ export default function ImpactSection() {
             }}
           >
             {[
-              { value: "95%", label: "Technique Adoption", desc: "Trained farmers implementing new post-harvest techniques" },
-              { value: "80%", label: "Market Access", desc: "Increase in direct market connections for participating FPOs" },
+              { value: "30+", label: "Rural Businesses Branded", desc: "Assisted with branding and regulatory compliance" },
+              { value: "5", label: "Strategic Partners", desc: "Gram Vikas, Tata Steel Foundation, Yuva Vikas, Mayfair Hotels, Dalma" },
               { value: "100%", label: "Program Continuity", desc: "Supported groups continuing programs independently" },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-4">

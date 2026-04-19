@@ -2,10 +2,10 @@ const footerLinks = {
   Profile: [
     { label: "About Myefarm", href: "#about" },
     { label: "Vision & Mission", href: "#vision" },
-    { label: "Technology", href: "#technology" },
-    { label: "Ecosystem", href: "#ecosystem" },
+    { label: "Services", href: "#services" },
     { label: "Impact", href: "#impact" },
-    { label: "Agritech Impact", href: "#agritech-impact" },
+    { label: "Leadership", href: "#leadership" },
+    { label: "Contact", href: "#contact" },
   ],
   Connect: [
     { label: "linkedin.com/in/swostimishra", href: "https://linkedin.com/in/swostimishra" },
@@ -41,8 +41,7 @@ export default function Footer() {
               className="text-sm leading-relaxed mb-4"
               style={{ color: "rgba(255,255,255,0.5)", maxWidth: "240px" }}
             >
-              Agritech platform founded by Swosti Mishra to
-              bridge farmers and consumers through technology and trust.
+              Agritech social enterprise bridging rural producers and global markets through digital transformation and market access.
             </p>
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium"
@@ -87,7 +86,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
-            © {new Date().getFullYear()} mye.farm · Swosti Mishra · All rights reserved
+            © {new Date().getFullYear()} Myefarm · All rights reserved
           </p>
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
             Building sustainable agri-value chains through technology

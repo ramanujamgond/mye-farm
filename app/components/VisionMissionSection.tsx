@@ -2,173 +2,138 @@
 
 import FadeUp from "./FadeUp";
 
-const missions = [
-  {
-    icon: "🌾",
-    text: "Empower farmers, FPOs, and rural enterprises with market access and digital tools",
-  },
-  {
-    icon: "🔍",
-    text: "Promote transparency in food systems by connecting consumers directly to the source",
-  },
-  {
-    icon: "📦",
-    text: "Enable value addition through branding, packaging, and compliance support",
-  },
-  {
-    icon: "🚀",
-    text: "Build sustainable livelihoods through technology-driven agricultural solutions",
-  },
-];
-
 export default function VisionMissionSection() {
   return (
     <section
       id="vision"
-      className="relative py-32 overflow-hidden"
-      style={{ background: "var(--color-forest)" }}
+      className="py-32"
+      style={{ background: "var(--color-mist)" }}
       data-scroll-section
     >
-      {/* Dot pattern */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, var(--color-sprout) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
+      <div className="mx-auto px-6" style={{ maxWidth: "1280px" }}>
+        <FadeUp>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="h-px w-12" style={{ background: "var(--color-leaf)" }} />
+            <span
+              className="text-xs font-semibold uppercase tracking-widest"
+              style={{ color: "var(--color-leaf)" }}
+            >
+              Our Purpose
+            </span>
+            <span className="h-px w-12" style={{ background: "var(--color-leaf)" }} />
+          </div>
+        </FadeUp>
 
-      <div
-        className="relative z-10 mx-auto px-6"
-        style={{ maxWidth: "1280px" }}
-      >
-        <div className="grid lg:grid-cols-2 gap-20">
+        <FadeUp delay={0.05}>
+          <h2
+            className="text-center mb-16"
+            style={{
+              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontSize: "clamp(1.875rem, 3.5vw, 2.5rem)",
+              fontWeight: 700,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.2,
+              color: "var(--color-soil)",
+            }}
+          >
+            What drives every decision we make
+          </h2>
+        </FadeUp>
+
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Vision */}
-          <div>
-            <FadeUp>
-              <div className="flex items-center gap-3 mb-4">
-                <span className="h-px w-12" style={{ background: "var(--color-lime)" }} />
-                <span
-                  className="text-xs font-semibold uppercase tracking-widest"
-                  style={{ color: "var(--color-lime)" }}
-                >
-                  Vision
-                </span>
-              </div>
-            </FadeUp>
-
-            <FadeUp delay={0.1}>
-              <h2
-                className="mb-8"
+          <FadeUp delay={0.1}>
+            <div
+              className="rounded-3xl p-10 h-full"
+              style={{
+                background: "var(--color-forest)",
+                border: "1px solid rgba(76,175,114,0.2)",
+              }}
+            >
+              <div
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6"
                 style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(1.875rem, 3vw, 2.25rem)",
-                  fontWeight: 700,
-                  letterSpacing: "-0.02em",
-                  lineHeight: 1.3,
-                  color: "white",
+                  background: "rgba(168,217,108,0.15)",
+                  color: "var(--color-lime)",
+                  border: "1px solid rgba(168,217,108,0.2)",
                 }}
               >
-                A transparent, technology-enabled agricultural ecosystem
-              </h2>
-            </FadeUp>
-
-            <FadeUp delay={0.15}>
-              <p
-                className="text-lg leading-relaxed"
-                style={{ color: "rgba(255,255,255,0.7)" }}
-              >
-                To create a world where producers and consumers are directly
-                connected — ensuring fairness, sustainability, and long-term
-                value for all stakeholders across the agricultural value chain.
-              </p>
-            </FadeUp>
-
-            {/* Vision pillars */}
-            <FadeUp delay={0.2}>
-              <div className="mt-10 flex flex-col gap-4">
-                {[
-                  { label: "Fairness", desc: "Fair value for every farmer, every harvest" },
-                  { label: "Transparency", desc: "Full traceability from farm to consumer" },
-                  { label: "Sustainability", desc: "Long-term ecological and economic health" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex items-start gap-4 p-4 rounded-xl"
-                    style={{
-                      background: "var(--surface-mid)",
-                      border: "1px solid rgba(76,175,114,0.12)",
-                    }}
-                  >
-                    <div
-                      className="w-2 h-2 rounded-full mt-2 shrink-0"
-                      style={{ background: "var(--color-sprout)" }}
-                    />
-                    <div>
-                      <p className="text-sm font-semibold text-white">{item.label}</p>
-                      <p className="text-xs mt-0.5" style={{ color: "rgba(255,255,255,0.5)" }}>
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+                🔭 Vision — Future-Focused
               </div>
-            </FadeUp>
-          </div>
+              <h3
+                className="text-2xl font-bold text-white mb-5"
+                style={{ fontFamily: "var(--font-playfair), Georgia, serif", lineHeight: 1.3 }}
+              >
+                Every rural producer, a digital-ready entrepreneur
+              </h3>
+              <p className="leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+                To build a future where every rural producer is a digital-ready
+                entrepreneur and every consumer has access to the authentic,
+                indigenous soul of Indian agriculture.
+              </p>
+              <div
+                className="mt-8 h-0.5 w-12 rounded-full"
+                style={{ background: "var(--color-lime)" }}
+              />
+            </div>
+          </FadeUp>
 
           {/* Mission */}
-          <div>
-            <FadeUp delay={0.05}>
-              <div className="flex items-center gap-3 mb-4">
-                <span className="h-px w-12" style={{ background: "var(--color-harvest)" }} />
-                <span
-                  className="text-xs font-semibold uppercase tracking-widest"
-                  style={{ color: "var(--color-harvest)" }}
-                >
-                  Mission
-                </span>
-              </div>
-            </FadeUp>
-
-            <FadeUp delay={0.1}>
-              <h2
-                className="mb-8"
+          <FadeUp delay={0.15}>
+            <div
+              className="rounded-3xl p-10 h-full"
+              style={{
+                background: "var(--color-cloud)",
+                border: "1px solid var(--color-fog)",
+                boxShadow: "var(--shadow-sm)",
+              }}
+            >
+              <div
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6"
                 style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(1.875rem, 3vw, 2.25rem)",
-                  fontWeight: 700,
-                  letterSpacing: "-0.02em",
-                  lineHeight: 1.3,
-                  color: "white",
+                  background: "rgba(232,160,32,0.1)",
+                  color: "var(--color-harvest)",
+                  border: "1px solid rgba(232,160,32,0.2)",
                 }}
               >
-                Four pillars driving every decision
-              </h2>
-            </FadeUp>
-
-            <div className="flex flex-col gap-5">
-              {missions.map((item, i) => (
-                <FadeUp key={item.text} delay={0.15 + i * 0.08}>
-                  <div
-                    className="flex items-start gap-5 p-5 rounded-2xl transition-all duration-300 hover:-translate-y-0.5"
-                    style={{
-                      background: "var(--surface-mid)",
-                      border: "1px solid rgba(76,175,114,0.12)",
-                    }}
-                  >
-                    <span className="text-2xl shrink-0">{item.icon}</span>
-                    <p
-                      className="text-sm leading-relaxed"
-                      style={{ color: "rgba(255,255,255,0.75)" }}
+                🎯 Mission — Action-Oriented
+              </div>
+              <h3
+                className="text-2xl font-bold mb-5"
+                style={{
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                  color: "var(--color-soil)",
+                  lineHeight: 1.3,
+                }}
+              >
+                Bridging rural production and urban consumption
+              </h3>
+              <p className="leading-relaxed mb-6" style={{ color: "var(--color-bark)" }}>
+                We are committed to bridging the gap between rural production
+                and urban consumption. By empowering FPOs and SHGs with digital
+                tools, business acumen, and market access, we ensure price
+                stability for farmers and high-quality, natural food for the world.
+              </p>
+              <ul className="flex flex-col gap-3">
+                {[
+                  "Empower FPOs & SHGs with digital tools",
+                  "Ensure fair price realization for farmers",
+                  "Connect consumers to authentic, indigenous produce",
+                  "Build sustainable rural enterprises at scale",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm" style={{ color: "var(--color-soil)" }}>
+                    <span
+                      className="w-5 h-5 rounded-full flex items-center justify-center text-white text-xs shrink-0 mt-0.5"
+                      style={{ background: "var(--color-leaf)" }}
                     >
-                      {item.text}
-                    </p>
-                  </div>
-                </FadeUp>
-              ))}
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
+          </FadeUp>
         </div>
       </div>
     </section>
