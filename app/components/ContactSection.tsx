@@ -291,7 +291,7 @@ export default function ContactSection() {
                 style={{ borderTop: "1px solid var(--color-fog)" }}
               >
                 <p className="text-xs" style={{ color: "var(--color-bark)" }}>
-                  🌱 Centre of Excellence in Agritech · Bhubaneswar, Odisha
+                  🌱 Agritech · Bhubaneswar, Odisha
                 </p>
               </div>
             </div>

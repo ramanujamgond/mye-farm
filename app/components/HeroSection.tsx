@@ -85,7 +85,7 @@ export default function HeroSection() {
               className="mb-6 text-lg font-medium"
               style={{ color: "var(--color-sprout)" }}
             >
-              Founder, Myefarm — Centre of Excellence in Agritech
+              Founder, Myefarm
             </motion.p>
 
             {/* Vision line */}

@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Swosti Mishra — Founder, Myefarm | Centre of Excellence in Agritech",
+  title: "Swosti Mishra — Founder, Myefarm | Agritech",
   description:
     "Founder profile of Swosti Mishra, building a transparent, technology-enabled agricultural ecosystem through Myefarm — empowering farmers, FPOs, and rural enterprises across India.",
   keywords: [
@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     "Odisha",
     "farmer empowerment",
     "sustainable agriculture",
-    "Centre of Excellence",
   ],
   openGraph: {
     title: "Swosti Mishra — Founder, Myefarm",

@@ -5,7 +5,7 @@ const footerLinks = {
     { label: "Technology", href: "#technology" },
     { label: "Ecosystem", href: "#ecosystem" },
     { label: "Impact", href: "#impact" },
-    { label: "Centre of Excellence", href: "#centre-of-excellence" },
+    { label: "Agritech Impact", href: "#agritech-impact" },
   ],
   Connect: [
     { label: "linkedin.com/in/swostimishra", href: "https://linkedin.com/in/swostimishra" },
@@ -41,7 +41,7 @@ export default function Footer() {
               className="text-sm leading-relaxed mb-4"
               style={{ color: "rgba(255,255,255,0.5)", maxWidth: "240px" }}
             >
-              Centre of Excellence in Agritech. Founded by Swosti Mishra to
+              Agritech platform founded by Swosti Mishra to
               bridge farmers and consumers through technology and trust.
             </p>
             <div
