@@ -1,21 +1,18 @@
 const footerLinks = {
-  Company: [
-    { label: "About Us", href: "#about" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Sustainability", href: "#sustainability" },
+  Profile: [
+    { label: "About Myefarm", href: "#about" },
+    { label: "Vision & Mission", href: "#vision" },
+    { label: "Technology", href: "#technology" },
+    { label: "Ecosystem", href: "#ecosystem" },
     { label: "Impact", href: "#impact" },
-  ],
-  Products: [
-    { label: "Desi Cow Ghee", href: "https://mye.farm" },
-    { label: "Whole Moong", href: "https://mye.farm" },
-    { label: "Roasted Moong Dal", href: "https://mye.farm" },
-    { label: "Kheer Rice", href: "https://mye.farm" },
+    { label: "Centre of Excellence", href: "#centre-of-excellence" },
   ],
   Connect: [
     { label: "swosti@mye.farm", href: "mailto:swosti@mye.farm" },
     { label: "getmyefarm@gmail.com", href: "mailto:getmyefarm@gmail.com" },
     { label: "+91 99 3723 2555", href: "tel:+919937232555" },
     { label: "mye.farm", href: "https://mye.farm" },
+    { label: "profile.mye.farm", href: "https://profile.mye.farm" },
   ],
 };
 
@@ -26,8 +23,7 @@ export default function Footer() {
       style={{ background: "var(--surface-deep)" }}
     >
       <div className="relative z-10 mx-auto px-6" style={{ maxWidth: "1280px" }}>
-        {/* Top row */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -37,18 +33,16 @@ export default function Footer() {
               >
                 m
               </span>
-              <span
-                className="text-white font-semibold text-lg"
-              >
+              <span className="text-white font-semibold text-lg">
                 mye<span style={{ color: "var(--color-sprout)" }}>.</span>farm
               </span>
             </div>
             <p
-              className="text-sm leading-relaxed mb-6"
-              style={{ color: "rgba(255,255,255,0.5)", maxWidth: "220px" }}
+              className="text-sm leading-relaxed mb-4"
+              style={{ color: "rgba(255,255,255,0.5)", maxWidth: "240px" }}
             >
-              Centre of Excellence in Agritech. Bridging farmers and consumers
-              through technology and trust.
+              Centre of Excellence in Agritech. Founded by Swosti Mishra to
+              bridge farmers and consumers through technology and trust.
             </p>
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium"
@@ -62,7 +56,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
               <h4
@@ -77,11 +70,7 @@ export default function Footer() {
                     <a
                       href={link.href}
                       target={link.href.startsWith("http") ? "_blank" : undefined}
-                      rel={
-                        link.href.startsWith("http")
-                          ? "noopener noreferrer"
-                          : undefined
-                      }
+                      rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="text-sm transition-colors duration-200 hover:text-white"
                       style={{ color: "rgba(255,255,255,0.55)" }}
                     >
@@ -94,25 +83,14 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Wave divider */}
-        <div
-          className="h-px mb-8"
-          style={{ background: "rgba(76,175,114,0.1)" }}
-        />
+        <div className="h-px mb-8" style={{ background: "rgba(76,175,114,0.1)" }} />
 
-        {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p
-            className="text-xs"
-            style={{ color: "rgba(255,255,255,0.35)" }}
-          >
-            © {new Date().getFullYear()} mye.farm · All rights reserved
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+            © {new Date().getFullYear()} mye.farm · Swosti Mishra · All rights reserved
           </p>
-          <p
-            className="text-xs"
-            style={{ color: "rgba(255,255,255,0.35)" }}
-          >
-            Made with 🌱 for farmers & conscious consumers
+          <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
+            Building sustainable agri-value chains through technology
           </p>
         </div>
       </div>

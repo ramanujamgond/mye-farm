@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ArrowRight, Play, ChevronDown } from "lucide-react";
+import { ArrowDown, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -20,17 +20,17 @@ export default function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, rgba(26,60,43,0.97) 0%, rgba(45,122,79,0.85) 60%, rgba(76,175,114,0.6) 100%)",
+            "linear-gradient(135deg, rgba(13,31,22,0.97) 0%, rgba(26,60,43,0.92) 50%, rgba(45,122,79,0.7) 100%)",
         }}
       />
 
       {/* Decorative circles */}
       <div
-        className="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-10"
+        className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full opacity-10"
         style={{ background: "var(--color-sprout)" }}
       />
       <div
-        className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full opacity-10"
+        className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full opacity-10"
         style={{ background: "var(--color-lime)" }}
       />
 
@@ -56,16 +56,16 @@ export default function HeroSection() {
                 className="text-xs font-medium tracking-widest uppercase"
                 style={{ color: "var(--color-lime)" }}
               >
-                Centre of Excellence in Agritech
+                Founder · Myefarm
               </span>
             </motion.div>
 
-            {/* Headline */}
+            {/* Name */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="text-white mb-6 leading-tight"
+              className="text-white mb-3 leading-tight"
               style={{
                 fontFamily: "var(--font-playfair), Georgia, serif",
                 fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
@@ -74,71 +74,94 @@ export default function HeroSection() {
                 lineHeight: 1.1,
               }}
             >
-              From Odisha&apos;s Soil
-              <br />
-              <span style={{ color: "var(--color-lime)" }}>To Your Table</span>
+              Swosti Mishra
             </motion.h1>
 
-            {/* Lead */}
+            {/* Role */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.65 }}
+              className="mb-6 text-lg font-medium"
+              style={{ color: "var(--color-sprout)" }}
+            >
+              Founder, Myefarm — Centre of Excellence in Agritech
+            </motion.p>
+
+            {/* Vision line */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.7, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
               className="mb-10 max-w-lg"
               style={{
-                color: "rgba(255,255,255,0.8)",
+                color: "rgba(255,255,255,0.75)",
                 fontSize: "1.125rem",
-                lineHeight: 1.7,
+                lineHeight: 1.75,
               }}
             >
-              We bridge farmers and consumers through technology, traceability,
-              and trust — building a food system that&apos;s fair, sustainable,
-              and rooted in tradition.
+              Building a transparent, technology-enabled agricultural ecosystem
+              where producers and consumers are directly connected — ensuring
+              fairness, sustainability, and long-term value for all stakeholders.
             </motion.p>
+
+            {/* Meta info */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.85 }}
+              className="flex flex-wrap gap-5 mb-10"
+            >
+              <div className="flex items-center gap-2">
+                <MapPin size={14} style={{ color: "var(--color-lime)" }} />
+                <span className="text-sm" style={{ color: "rgba(255,255,255,0.6)" }}>
+                  Bhubaneswar, Odisha, India
+                </span>
+              </div>
+              <a
+                href="mailto:swosti@mye.farm"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Mail size={14} style={{ color: "var(--color-lime)" }} />
+                <span className="text-sm" style={{ color: "rgba(255,255,255,0.6)" }}>
+                  swosti@mye.farm
+                </span>
+              </a>
+            </motion.div>
 
             {/* CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: 0.95, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-wrap gap-4"
             >
-              <a
-                href="https://mye.farm"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={scrollToAbout}
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
                 style={{
                   background: "var(--color-leaf)",
                   boxShadow: "0 4px 20px rgba(45, 122, 79, 0.4)",
                 }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.background =
-                    "var(--color-sprout)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.background =
-                    "var(--color-leaf)";
-                }}
               >
-                Shop Now
-                <ArrowRight size={16} />
-              </a>
+                Explore Profile
+                <ArrowDown size={15} />
+              </button>
 
-              <button
-                onClick={scrollToAbout}
+              <a
+                href="mailto:swosti@mye.farm"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold rounded-full transition-all duration-200 hover:bg-white/10"
                 style={{
-                  border: "1.5px solid rgba(255,255,255,0.4)",
+                  border: "1.5px solid rgba(255,255,255,0.35)",
                   color: "white",
                 }}
               >
-                <Play size={14} />
-                Our Story
-              </button>
+                <Mail size={14} />
+                Get in Touch
+              </a>
             </motion.div>
 
-            {/* Stats row */}
+            {/* Impact stats */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -162,7 +185,7 @@ export default function HeroSection() {
                   </div>
                   <div
                     className="text-xs font-medium uppercase tracking-wider mt-0.5"
-                    style={{ color: "rgba(255,255,255,0.5)" }}
+                    style={{ color: "rgba(255,255,255,0.45)" }}
                   >
                     {stat.label}
                   </div>
@@ -171,73 +194,69 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right — Visual card */}
+          {/* Right — Founder photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.92, x: 40 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden lg:block"
+            className="hidden lg:flex justify-center"
           >
-            <div
-              className="relative rounded-3xl overflow-hidden p-8"
-              style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(76,175,114,0.2)",
-                backdropFilter: "blur(8px)",
-              }}
-            >
-              {/* Hero image */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
-                <Image
-                  src="/images/founder-swosti-paddy-field.jpeg"
-                  alt="Swosti Mishra, co-founder of mye.farm, in a paddy field in Odisha"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(to top, rgba(10,25,16,0.6) 0%, transparent 60%)",
-                  }}
-                />
-              </div>
-
-              {/* Floating badge */}
+            <div className="relative">
+              {/* Glow ring */}
               <div
-                className="absolute top-6 right-6 px-3 py-1.5 rounded-full text-xs font-semibold"
+                className="absolute -inset-3 rounded-3xl opacity-30 blur-xl"
+                style={{ background: "var(--color-sprout)" }}
+              />
+
+              {/* Photo card */}
+              <div
+                className="relative rounded-3xl overflow-hidden"
                 style={{
-                  background: "var(--color-harvest)",
-                  color: "var(--color-soil)",
+                  width: "420px",
+                  border: "1px solid rgba(76,175,114,0.25)",
                 }}
               >
-                100% Natural
-              </div>
+                <div className="aspect-[3/4] relative">
+                  <Image
+                    src="/images/founder-swosti-paddy-field.jpeg"
+                    alt="Swosti Mishra, Founder of Myefarm, in a paddy field in Odisha"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to top, rgba(10,25,16,0.85) 0%, rgba(10,25,16,0.1) 50%, transparent 100%)",
+                    }}
+                  />
+                </div>
 
-              {/* Bottom info */}
-              <div className="mt-6 flex items-center justify-between">
-                <div>
+                {/* Name overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p
-                    className="text-sm font-medium"
-                    style={{ color: "rgba(255,255,255,0.6)" }}
+                    className="text-xl font-bold text-white"
+                    style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                   >
-                    Co-founder
+                    Swosti Mishra
                   </p>
-                  <p className="text-base font-semibold text-white mt-0.5">
-                    Swosti Mishra · Odisha
+                  <p className="text-sm mt-1" style={{ color: "var(--color-lime)" }}>
+                    Founder · Myefarm
                   </p>
                 </div>
-                <a
-                  href="https://mye.farm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                  style={{ background: "var(--color-leaf)" }}
-                  aria-label="Visit mye.farm"
+
+                {/* Badge */}
+                <div
+                  className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-semibold"
+                  style={{
+                    background: "rgba(232,160,32,0.9)",
+                    color: "var(--color-soil)",
+                    backdropFilter: "blur(4px)",
+                  }}
                 >
-                  <ArrowRight size={16} className="text-white" />
-                </a>
+                  Agritech Founder
+                </div>
               </div>
             </div>
           </motion.div>
@@ -250,13 +269,13 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.5 }}
         onClick={scrollToAbout}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 hover:text-white/80 transition-colors"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors"
         aria-label="Scroll to explore"
       >
         <span className="text-xs font-medium tracking-widest uppercase">
           Scroll to explore
         </span>
-        <ChevronDown size={18} className="animate-bounce-slow" />
+        <ArrowDown size={16} className="animate-bounce-slow" />
       </motion.button>
 
       {/* Wave divider */}
@@ -270,7 +289,7 @@ export default function HeroSection() {
         >
           <path
             d="M0 60 L0 30 Q360 0 720 30 Q1080 60 1440 30 L1440 60 Z"
-            fill="var(--surface-deep)"
+            fill="var(--color-mist)"
           />
         </svg>
       </div>

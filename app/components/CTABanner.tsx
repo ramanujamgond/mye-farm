@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import FadeUp from "./FadeUp";
 
 export default function CTABanner() {
@@ -12,7 +12,6 @@ export default function CTABanner() {
       }}
       data-scroll-section
     >
-      {/* Decorative circles */}
       <div
         className="absolute -top-16 -right-16 w-64 h-64 rounded-full opacity-20"
         style={{ background: "white" }}
@@ -38,7 +37,7 @@ export default function CTABanner() {
               color: "var(--color-soil)",
             }}
           >
-            Ready to taste the difference?
+            Let&apos;s build the future of agriculture together
           </h2>
         </FadeUp>
 
@@ -47,36 +46,38 @@ export default function CTABanner() {
             className="mb-10 text-lg"
             style={{ color: "rgba(15,31,23,0.75)", lineHeight: 1.7 }}
           >
-            Shop our range of chemical-free, farm-fresh products — or partner
-            with us to bring your produce to conscious consumers across India.
+            Whether you&apos;re a farmer, an investor, a policy maker, or an
+            organisation aligned with sustainable agritech — reach out to
+            explore how we can collaborate.
           </p>
         </FadeUp>
 
         <FadeUp delay={0.2}>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://mye.farm"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:swosti@mye.farm"
               className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
               style={{
                 background: "var(--color-soil)",
                 boxShadow: "0 4px 20px rgba(15,31,23,0.3)",
               }}
             >
-              Shop Now
-              <ArrowRight size={16} />
+              <Mail size={15} />
+              swosti@mye.farm
             </a>
 
             <a
-              href="mailto:swosti@mye.farm"
+              href="https://mye.farm"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold rounded-full transition-all duration-200 hover:bg-black/10"
               style={{
                 border: "1.5px solid rgba(15,31,23,0.3)",
                 color: "var(--color-soil)",
               }}
             >
-              Partner With Us
+              Visit mye.farm
+              <ArrowRight size={14} />
             </a>
           </div>
         </FadeUp>

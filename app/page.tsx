@@ -1,13 +1,11 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import TrustBar from "./components/TrustBar";
 import AboutSection from "./components/AboutSection";
-import ProductsSection from "./components/ProductsSection";
+import VisionMissionSection from "./components/VisionMissionSection";
+import TechApproachSection from "./components/TechApproachSection";
+import EcosystemSection from "./components/EcosystemSection";
 import ImpactSection from "./components/ImpactSection";
-import HowItWorksSection from "./components/HowItWorksSection";
-import SustainabilitySection from "./components/SustainabilitySection";
-import TestimonialSection from "./components/TestimonialSection";
-import FarmerSection from "./components/FarmerSection";
+import CentreOfExcellenceSection from "./components/CentreOfExcellenceSection";
 import CTABanner from "./components/CTABanner";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
@@ -18,14 +16,12 @@ export default function Home() {
       <Navbar />
       <main id="main-content">
         <HeroSection />
-        <TrustBar />
         <AboutSection />
-        <ProductsSection />
+        <VisionMissionSection />
+        <TechApproachSection />
+        <EcosystemSection />
         <ImpactSection />
-        <HowItWorksSection />
-        <SustainabilitySection />
-        <TestimonialSection />
-        <FarmerSection />
+        <CentreOfExcellenceSection />
         <CTABanner />
         <ContactSection />
       </main>
