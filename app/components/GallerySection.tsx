@@ -29,13 +29,20 @@ const images = [
     src: "/images/myefarm-products-flatlay.jpeg",
     alt: "Myefarm product range — rice, ghee, honey and millets",
     caption: "Products · Farm Fresh",
+    span: "md:col-span-2",
+    aspect: "aspect-[16/9]",
+  },
+  {
+    src: "/images/founder-swosti-paddy-field.jpeg",
+    alt: "Swosti Mishra in a paddy field in Odisha",
+    caption: "Founder · Odisha Fields",
     span: "",
     aspect: "aspect-square",
   },
   {
-    src: "/images/myefarm-profile-doc.jpeg",
-    alt: "Myefarm company profile document",
-    caption: "Company Profile",
+    src: "/images/a_rice_feild.jpeg",
+    alt: "Rice field — Myefarm partner farm",
+    caption: "Rice Fields · Odisha",
     span: "",
     aspect: "aspect-square",
   },
@@ -73,13 +80,6 @@ const images = [
     caption: "Field Documentation",
     span: "",
     aspect: "aspect-square",
-  },
-  {
-    src: "/images/profile-6.jpeg",
-    alt: "Myefarm field documentation — page 6",
-    caption: "Field Documentation",
-    span: "md:col-span-2",
-    aspect: "aspect-[16/9]",
   },
 ];
 
