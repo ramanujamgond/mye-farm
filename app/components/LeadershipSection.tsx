@@ -33,7 +33,7 @@ const leaders = [
     focus: "Focused on the digital transformation of agriculture. Integrates technology and risk-management strategies into the Myefarm ecosystem, ensuring rural producers have the technical infrastructure and market intelligence needed to thrive.",
     tags: ["Tech Entrepreneurship", "Digital Agriculture", "Abeja Labs"],
     email: "pritesh@mye.farm",
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/pritesh-kumar-jena/",
     image: null,
     imagePlaceholder: "Professional headshot of Pritesh Kumar Jena",
   },
