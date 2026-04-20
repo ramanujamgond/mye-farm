@@ -53,8 +53,8 @@ export default function AboutSection() {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden aspect-square">
                   <Image
-                    src="/images/mye_farm_brochure.jpeg"
-                    alt="Myefarm brochure — company overview"
+                    src="/images/founder-team-group.jpeg"
+                    alt="Myefarm founding team"
                     fill
                     className="object-cover"
                   />

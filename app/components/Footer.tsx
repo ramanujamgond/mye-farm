@@ -5,6 +5,7 @@ const footerLinks = {
     { label: "Services", href: "#services" },
     { label: "Impact", href: "#impact" },
     { label: "Leadership", href: "#leadership" },
+    { label: "Gallery", href: "#gallery" },
     { label: "Contact", href: "#contact" },
   ],
   Connect: [

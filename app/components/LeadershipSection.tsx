@@ -25,8 +25,8 @@ const leaders = [
     linkedin: "https://linkedin.com/in/swostimishra",
     image: "/images/swosti_with_two_farmers_on_both_side.jpeg",
     imageAlt: "Swosti Mishra with farmers in Odisha",
-    secondImage: "/images/swosti_with_two_farmers_on_both_side.jpeg",
-    secondImageAlt: "Swosti Mishra with two farmers on both sides",
+    secondImage: "/images/founder-swosti-paddy-field.jpeg",
+    secondImageAlt: "Swosti Mishra in a paddy field in Odisha",
     imagePlaceholder: null,
   },
   {

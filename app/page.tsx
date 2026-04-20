@@ -6,6 +6,7 @@ import ServicesSection from "./components/ServicesSection";
 import ImpactSection from "./components/ImpactSection";
 import PartnersSection from "./components/PartnersSection";
 import LeadershipSection from "./components/LeadershipSection";
+import GallerySection from "./components/GallerySection";
 import CTABanner from "./components/CTABanner";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <ImpactSection />
         <PartnersSection />
         <LeadershipSection />
+        <GallerySection />
         <CTABanner />
         <ContactSection />
       </main>
