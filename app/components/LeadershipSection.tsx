@@ -23,8 +23,8 @@ const leaders = [
     tags: ["Strategic Leadership", "Banking Background", "Rural Empowerment"],
     email: "swosti@mye.farm",
     linkedin: "https://linkedin.com/in/swostimishra",
-    image: "/images/swosti_mishra.jpeg",
-    imageAlt: "Swosti Mishra, Founder & Managing Director of Myefarm",
+    image: "/images/swosti_with_two_farmers_on_both_side.jpeg",
+    imageAlt: "Swosti Mishra with farmers in Odisha",
     secondImage: "/images/swosti_with_two_farmers_on_both_side.jpeg",
     secondImageAlt: "Swosti Mishra with two farmers on both sides",
     imagePlaceholder: null,
@@ -106,7 +106,7 @@ export default function LeadershipSection() {
                         style={{
                           objectPosition:
                             leader.name === "Swosti Mishra"
-                              ? "center 70%"
+                              ? "center center"
                               : "center center",
                         }}
                       />
