@@ -100,9 +100,15 @@ export default function LeadershipSection() {
                     <>
                       <Image
                         src={leader.image}
-                        alt={`${leader.name}, ${leader.title}`}
+                        alt={leader.imageAlt}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover"
+                        style={{
+                          objectPosition:
+                            leader.name === "Swosti Mishra"
+                              ? "center 70%"
+                              : "center center",
+                        }}
                       />
                       <div
                         className="absolute inset-0"
