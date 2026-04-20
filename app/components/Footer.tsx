@@ -11,7 +11,7 @@ const footerLinks = {
     { label: "linkedin.com/in/swostimishra", href: "https://linkedin.com/in/swostimishra" },
     { label: "mishra.swosti@gmail.com", href: "mailto:mishra.swosti@gmail.com" },
     { label: "swosti@mye.farm", href: "mailto:swosti@mye.farm" },
-    { label: "+91 99 3723 2555", href: "tel:+919937232555" },
+    { label: "+91 89 1758 3006", href: "tel:+918917583006" },
     { label: "mye.farm", href: "https://mye.farm" },
   ],
 };

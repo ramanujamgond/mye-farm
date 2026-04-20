@@ -159,7 +159,7 @@ export default function ContactSection() {
 
                 {/* Phone */}
                 <a
-                  href="tel:+919937232555"
+                  href="tel:+918917583006"
                   className="flex items-center gap-4 group"
                 >
                   <div
@@ -179,7 +179,7 @@ export default function ContactSection() {
                       className="text-sm font-medium group-hover:underline"
                       style={{ color: "var(--color-soil)" }}
                     >
-                      +91 99 3723 2555
+                      +91 89 1758 3006
                     </p>
                   </div>
                 </a>
