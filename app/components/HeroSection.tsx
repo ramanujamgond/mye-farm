@@ -176,10 +176,10 @@ export default function HeroSection() {
               >
                 <div className="aspect-[3/4] relative">
                   <Image
-                    src="/images/founder-team-field-visit.jpeg"
-                    alt="Myefarm team on a field visit with farmers in Odisha"
+                    src="/images/swosti_mishra.jpeg"
+                    alt="Swosti Mishra, Founder & Managing Director of Myefarm"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
                   />
                   <div
@@ -198,7 +198,7 @@ export default function HeroSection() {
                     Myefarm
                   </p>
                   <p className="text-sm mt-0.5" style={{ color: "var(--color-lime)" }}>
-                    Empowering rural producers since day one
+                    Swosti Mishra · Founder & MD
                   </p>
                 </div>
                 <div

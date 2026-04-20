@@ -85,8 +85,8 @@ export default function AgritechImpactSection() {
             <FadeUp delay={0.2}>
               <div className="relative rounded-2xl overflow-hidden aspect-[16/7]">
                 <Image
-                  src="/images/founder-swosti-paddy-field.jpeg"
-                  alt="Swosti Mishra in the field — embodying Myefarm's mission"
+                  src="/images/a_rice_feild.jpeg"
+                  alt="Rice field — Myefarm's commitment to sustainable agriculture"
                   fill
                   className="object-cover object-top"
                 />

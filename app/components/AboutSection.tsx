@@ -18,8 +18,8 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4">
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                 <Image
-                  src="/images/founder-team-field-visit.jpeg"
-                  alt="Swosti Mishra on a field visit with farmers in Odisha"
+                  src="/images/swosti_with_two_farmers_on_both_side.jpeg"
+                  alt="Swosti Mishra with partner farmers in Odisha"
                   fill
                   className="object-cover"
                 />
@@ -45,16 +45,16 @@ export default function AboutSection() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative rounded-2xl overflow-hidden aspect-square">
                   <Image
-                    src="/images/hands-holding-paddy.jpeg"
-                    alt="Hands holding freshly harvested paddy grains"
+                    src="/images/farmer_showing_crops_to_swosti.jpeg"
+                    alt="Farmer showing crops to Swosti Mishra"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden aspect-square">
                   <Image
-                    src="/images/founder-team-group.jpeg"
-                    alt="Myefarm founding team"
+                    src="/images/mye_farm_brochure.jpeg"
+                    alt="Myefarm brochure — company overview"
                     fill
                     className="object-cover"
                   />

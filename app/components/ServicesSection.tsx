@@ -119,8 +119,8 @@ export default function ServicesSection() {
           <FadeUp delay={0.15}>
             <div className="relative rounded-3xl overflow-hidden min-h-[200px]">
               <Image
-                src="/images/myefarm-products-flatlay.jpeg"
-                alt="Myefarm product range — indigenous grains and natural produce"
+                src="/images/cabbage_farm.jpeg"
+                alt="Fresh cabbage farm — Myefarm partner produce"
                 fill
                 className="object-cover"
               />
@@ -187,8 +187,8 @@ export default function ServicesSection() {
           <FadeUp delay={0.45}>
             <div className="relative rounded-3xl overflow-hidden min-h-[200px]">
               <Image
-                src="/images/hands-holding-paddy.jpeg"
-                alt="Hands holding freshly harvested paddy — the heart of Myefarm"
+                src="/images/farmer_in_feilds.jpeg"
+                alt="Farmer working in the fields — Myefarm partner"
                 fill
                 className="object-cover"
               />

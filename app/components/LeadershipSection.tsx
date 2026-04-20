@@ -23,7 +23,10 @@ const leaders = [
     tags: ["Strategic Leadership", "Banking Background", "Rural Empowerment"],
     email: "swosti@mye.farm",
     linkedin: "https://linkedin.com/in/swostimishra",
-    image: "/images/founder-swosti-paddy-field.jpeg",
+    image: "/images/swosti_mishra.jpeg",
+    imageAlt: "Swosti Mishra, Founder & Managing Director of Myefarm",
+    secondImage: "/images/swosti_with_two_farmers_on_both_side.jpeg",
+    secondImageAlt: "Swosti Mishra with two farmers on both sides",
     imagePlaceholder: null,
   },
   {
@@ -34,8 +37,11 @@ const leaders = [
     tags: ["Tech Entrepreneurship", "Digital Agriculture", "Abeja Labs"],
     email: "pritesh@mye.farm",
     linkedin: "https://www.linkedin.com/in/pritesh-kumar-jena/",
-    image: null,
-    imagePlaceholder: "Professional headshot of Pritesh Kumar Jena",
+    image: "/images/pritesh_taking_to_lady_farmer.jpeg",
+    imageAlt: "Pritesh Kumar Jena talking to a lady farmer",
+    secondImage: null,
+    secondImageAlt: null,
+    imagePlaceholder: null,
   },
 ];
 
